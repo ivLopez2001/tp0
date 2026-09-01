@@ -39,6 +39,7 @@ int main(void)
 	// ADVERTENCIA: Antes de continuar, tenemos que asegurarnos que el servidor esté corriendo para poder conectarnos a él
 
 	// Creamos una conexión hacia el servidor
+	log_info(logger, "Intentando conectar a IP=%s PUERTO=%s", ip, puerto);
 	conexion = crear_conexion(ip, puerto);
 	if (conexion == -1)
 	{
