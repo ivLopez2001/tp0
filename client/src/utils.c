@@ -42,7 +42,7 @@ int crear_conexion(char *ip, char* puerto)
 		freeaddrinfo(server_info);
 		return -1;
 	}
-	resultado = conect(
+	resultado = connect(
 		socket_cliente,
 		server_info->ai_addr,
 		server_info->ai_addrlen
